@@ -4,8 +4,49 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./normalize.css" />
         <link rel="stylesheet" href="./styles.css" />
-        <title>Document</title>
+        <title>cssMemSlider</title>
     </head>
-    <body></body>
+    <body>
+        <div class="container">
+            <header>
+                <h1>cssMemSlider</h1>
+                <input type="radio" id="item_1" checked />
+                <input type="radio" id="item_2" />
+                <input type="radio" id="item_3" />
+                <input type="radio" id="item_4" />
+                <input type="radio" id="item_5" />
+            </header>
+            <main>
+                <div class="slide">
+                    <img src="./assets/img-1.jpg" alt="img-1" />
+                    <p>img-1</p>
+                </div>
+                <div class="slide">
+                    <img src="./assets/img-2.jpg" alt="img-2" />
+                    <p>img-1</p>
+                </div>
+                <div class="slide">
+                    <img src="./assets/img-3.jpg" alt="img-3" />
+                    <p>img-1</p>
+                </div>
+                <div class="slide">
+                    <img src="./assets/img-4.jpg" alt="img-4" />
+                    <p>img-1</p>
+                </div>
+                <div class="slide">
+                    <img src="./assets/img-5.jpg" alt="img-5" />
+                    <p>img-1</p>
+                </div>
+            </main>
+            <footer>
+                <label class="item" for="item_1"></label>
+                <label class="item" for="item_2"></label>
+                <label class="item" for="item_3"></label>
+                <label class="item" for="item_4"></label>
+                <label class="item" for="item_4"></label>
+            </footer>
+        </div>
+    </body>
 </html>
