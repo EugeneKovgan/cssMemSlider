@@ -37,11 +37,10 @@ h2 {
     margin: 3rem 0 1rem;
     display: flex;
     justify-content: flex-end;
-    gap: 1rem;
 }
 .item {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -95,4 +94,17 @@ h2 {
 }
 #item_5:checked ~ .footer > .item > .point_5 {
     background-color: rgb(239, 165, 47);
+}
+
+@media (max-width: 568px) {
+    .footer {
+        margin: 1rem 0 1rem;
+        justify-content: center;
+    }
+    .slide h2 {
+        margin-top: 3.5rem;
+    }
+    .container {
+        height: 100vh;
+    }
 }
