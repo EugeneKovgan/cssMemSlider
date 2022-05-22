@@ -1,0 +1,110 @@
+body {
+    background-color: rgba(61, 61, 58, 0.225);
+}
+.container {
+    max-width: 80vh;
+    max-height: 98%;
+    overflow: hidden;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1vh solid transparent;
+}
+.show-block {
+    display: flex;
+    width: 500%;
+    max-height: 60vh;
+}
+.slide img {
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.slide {
+    transition: all 0.3s ease;
+    width: 20%;
+}
+input[name='radio'] {
+    position: absolute;
+    visibility: hidden;
+}
+h2 {
+    margin-top: 0.75rem;
+    margin-bottom: 1.75rem;
+}
+.footer {
+    margin: 0.65rem 0 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.item {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item:hover .item-insert {
+    background-color: rgb(221, 238, 239);
+    border-color: rgb(221, 238, 239);
+}
+.item:focus .item-insert {
+    background-color: #2c2c2c;
+}
+.item-insert {
+    display: block;
+    box-sizing: border-box;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: rgb(77, 77, 220);
+    border: solid 0.1rem rgb(77, 77, 220);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+#item_1:checked ~ .show-block > .active {
+    margin-left: 0;
+}
+#item_1:checked ~ .footer > .item > .point_1 {
+    background-color: rgb(239, 165, 47);
+}
+#item_2:checked ~ .show-block > .active {
+    margin-left: -20%;
+}
+#item_2:checked ~ .footer > .item > .point_2 {
+    background-color: rgb(239, 165, 47);
+}
+#item_3:checked ~ .show-block > .active {
+    margin-left: -40%;
+}
+#item_3:checked ~ .footer > .item > .point_3 {
+    background-color: rgb(239, 165, 47);
+}
+#item_4:checked ~ .show-block > .active {
+    margin-left: -60%;
+}
+#item_4:checked ~ .footer > .item > .point_4 {
+    background-color: rgb(239, 165, 47);
+}
+#item_5:checked ~ .show-block > .active {
+    margin-left: -80%;
+}
+#item_5:checked ~ .footer > .item > .point_5 {
+    background-color: rgb(239, 165, 47);
+}
+
+@media (max-width: 568px) {
+    .footer {
+        margin: 1rem 0 1rem;
+        justify-content: center;
+    }
+    .slide h2 {
+        margin-top: 3.5rem;
+    }
+    .container {
+        height: 100vh;
+    }
+}
